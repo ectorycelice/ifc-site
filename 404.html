@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>IFC Campeonatos</title>
+  <script>
+    // GitHub Pages SPA redirect: preserva o path/query/hash original
+    // convertendo pra query string, e manda pro index.html.
+    var loc = window.location;
+    var redirect = loc.pathname + loc.search + loc.hash;
+    loc.replace(
+      loc.origin + loc.pathname.split('/').slice(0, 2).join('/') +
+      '/?redirect=' + encodeURIComponent(redirect)
+    );
+  </script>
+</head>
+<body>
+</body>
+</html>
